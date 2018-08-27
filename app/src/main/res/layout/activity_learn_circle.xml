@@ -6,19 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".learn.LearnCircle">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/circle_background_empty"
-            android:text="Empty"/>
+                <TextView
+                    android:id="@+id/empty_text_view1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle_background_fill"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/empty_text_view2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle_background_empty"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/empty_text_view3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle_both"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+        </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
