@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learn.LearnCircle"></activity>
+        <activity android:name=".learn.LearnCircle" />
+        <activity android:name=".learn.LearnListView"></activity>
     </application>
 
 </manifest>

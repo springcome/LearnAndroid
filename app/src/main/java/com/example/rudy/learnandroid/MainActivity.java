@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.rudy.learnandroid.learn.LearnCircle;
+import com.example.rudy.learnandroid.learn.LearnListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent learnCircle = new Intent(getApplicationContext(), LearnCircle.class);
                 startActivity(learnCircle);
+            }
+        });
+
+        Button learnListViewBtn = findViewById(R.id.listViewBtn);
+        learnListViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent learnListView = new Intent(getApplicationContext(), LearnListView.class);
+                startActivity(learnListView);
             }
         });
     }
